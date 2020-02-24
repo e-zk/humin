@@ -7,8 +7,15 @@ installation
 ------------
 
 	# build humin
-	$ make
+	make
+	# install (defaults to /usr/local/bin)
+	make install
+	
+	# install to custom PREFIX (binary is installed at /home/me/bin)
+	make PREFIX=/home/me install 
 
+	# uninstall (add PREFIX option like above to uninstall from custom location)
+	make uninstall
 usage
 -----
 
