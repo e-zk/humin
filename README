@@ -1,0 +1,26 @@
+humin
+=====
+
+converts seconds to human readable format. inspired by z3bra's human(1): http://git.z3bra.org/human/file/README.html.
+
+installation
+------------
+
+	# build humin
+	$ make
+
+usage
+-----
+
+	# convert 300 seconds to 'hh:mm:ss'
+	humin 300
+	00:05:00
+
+	# convert 87000 seconds to 'dd days hh:mm:ss'
+	humin 87000
+	01 days 00:10:00
+
+license
+-------
+
+see the LICENSE file in this repository.
