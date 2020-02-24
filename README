@@ -6,25 +6,32 @@ converts seconds to human readable format. inspired by z3bra's human(1): http://
 installation
 ------------
 
-	# build humin
-	make
-	# install (defaults to /usr/local/bin)
-	make install
-	
-	# install to custom PREFIX (binary is installed at /home/me/bin)
-	make PREFIX=/home/me install 
+to build humin:
 
-	# uninstall (add PREFIX option like above to uninstall from custom location)
-	make uninstall
+	$ make
+
+to install humin (default location is /usr/local/bin)
+
+	# make install
+	
+to install to custom PREFIX (binary in this example is installed to /home/me/bin)
+
+	$ make PREFIX=/home/me install 
+
+uninstall humin (add PREFIX option like above to uninstall from custom location)
+
+	# make uninstall
 usage
 -----
 
-	# convert 300 seconds to 'hh:mm:ss'
-	humin 300
+convert 300 seconds to 'hh:mm:ss'
+
+	$ humin 300
 	00:05:00
 
-	# convert 87000 seconds to 'dd days hh:mm:ss'
-	humin 87000
+convert 87000 seconds to 'dd days hh:mm:ss'
+
+	$ humin 87000
 	01 days 00:10:00
 
 license
